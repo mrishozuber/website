@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+
+{% block body %}
+
+{{greeting}}
+<xmp>{{ kisinia_art }}</xmp>
+<form action="/kisinia" method="POST">
+	<div class="kisinia">
+	<div class="app-title">
+		<h1>kisinia Status</h1>
+	</div>
+	<div class="login-form">
+	<div class="control-group">
+					<input type="text" class="login-field" value="" placeholder="input speech here" name="input">
+	<label class="login-field-icon fui-user" for="kisinia say"></label></div>
+	kisinia_type:
+	<select name="kisinia_type">
+		<option value="1">1</option>
+		<option value="2">2</option>
+	</select> 
+
+	<input type="submit" value="submit" class="btn btn-primary btn-large btn-block">
+
+	</div>
+	
+	</div>
+</form>
+
+{% endblock %}
